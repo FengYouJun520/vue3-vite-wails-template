@@ -4,7 +4,7 @@
   "assetdir": "frontend/dist",
   "frontend:install": "npm install",
   "frontend:build": "npm run build",
-  "frontend:dev": "npm run build:watch",
+  "frontend:dev": "",
   "wailsjsdir": "frontend/src",
   "author": {
     "name": "{{.AuthorName}}",
