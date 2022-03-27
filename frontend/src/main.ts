@@ -3,7 +3,13 @@ import App from './App.vue'
 import router from './router'
 import { setupPinia } from './store'
 
-const app = createApp(App)
-setupPinia(app)
-app.use(router)
-app.mount('#app')
+async function bootstrap() {
+  const app = createApp(App)
+  setupPinia(app)
+  app.use(router)
+
+  await router.isReady()
+  app.mount('#app')
+}
+
+bootstrap()
