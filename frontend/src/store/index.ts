@@ -11,5 +11,3 @@ export function setupPinia(app: App) {
 
   app.use(pinia)
 }
-
-export default pinia
